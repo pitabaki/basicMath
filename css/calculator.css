@@ -1,9 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #383232; }
+
 body {
   background-color: #f2ebeb; }
 
 input {
   margin: 0 auto;
-  margin: 0.5em 5px;
+  margin: 0.25em 5px;
   padding: 0;
   padding: 0.5em;
   border-radius: 6px;
@@ -17,9 +29,9 @@ textarea:focus {
   outline: none; }
 
 fieldset {
-  margin: 0.5em 30px;
+  margin: 0.5em 0;
   padding: 2% 0;
-  width: 37%;
+  width: 80%;
   background-color: #d3bebe;
   border-radius: 6px; }
 
@@ -31,7 +43,8 @@ fieldset {
 
 .navbar-fixed-top {
   background-color: #383232;
-  background-image: none; }
+  background-image: none;
+  border: 0; }
 
 .navbar-default .navbar-brand {
   text-decoration: none;
@@ -53,10 +66,29 @@ fieldset {
 .content {
   margin: 0 auto;
   padding: 0;
-  padding-top: 10%; }
+  padding-top: 80px; }
 
 .subtitle {
   padding-left: 4px;
   font-size: 16px;
   color: #d34a8c;
   font-weight: 300; }
+
+.calculator {
+  margin: 0 auto;
+  margin: 0 30px; }
+
+form {
+  padding-top: 20px; }
+
+.submit input {
+  margin: 0.5em 5px;
+  padding: 0.5em;
+  color: #f2ebeb;
+  background-color: #7d4b9d;
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px #9b7373; }
+
+.submit input:hover {
+  background-color: #642f8c;
+  box-shadow: 5px 5px #9b7373; }

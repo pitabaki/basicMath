@@ -8,6 +8,7 @@ $tertiary_shade: #25488c
 $rich_grey: #383232 
 $bg_white: #f2ebeb
 $bg_white_shade: #d3bebe
+$bg_white_shadow: #9b7373
 
 //Typography
 
@@ -38,13 +39,26 @@ $default_padding: 0
 
 //form
 $borderRadius: 6px
+$transition: 0.5s
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p
+	font-family: $main_typeface
+	color: $rich_grey
 
 body
 	background-color: $bg_white
 
 input
 	margin: 0 auto
-	margin: 0.5em 5px
+	margin: 0.25em 5px
 	padding: 0
 	padding: 0.5em 
 	border-radius: $borderRadius
@@ -58,9 +72,9 @@ textarea:focus
 	outline: none
 
 fieldset
-	margin: 0.5em 30px
+	margin: 0.5em 0
 	padding: 2% 0
-	width: 37%
+	width: 80%
 	background-color: $bg_white_shade
 	border-radius: $borderRadius
 
@@ -73,6 +87,7 @@ fieldset
 .navbar-fixed-top
 	background-color: $rich_grey
 	background-image: none
+	border: 0
 
 .navbar-default .navbar-brand
 	text-decoration: none
@@ -82,7 +97,7 @@ fieldset
 	font-size: $h3_size
 	font-weight: $book_regular
 	line-height: 1em
-	transition: color 0.5s ease
+	transition: color $transition ease
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:active,
@@ -94,10 +109,29 @@ fieldset
 .content
 	margin: 0 auto
 	padding: 0
-	padding-top: 10%
+	padding-top: 80px
 
 .subtitle
 	padding-left: 4px
 	font-size: $paragraph
 	color: $primary_shade
 	font-weight: $light
+
+.calculator
+	margin: 0 auto
+	margin: 0 30px
+
+form
+	padding-top: 20px
+
+.submit input
+	margin: 0.5em 5px
+	padding: 0.5em
+	color: $bg_white
+	background-color: $secondary_tint
+	transition: all $transition ease
+	box-shadow: 2px 2px $bg_white_shadow
+
+.submit input:hover
+	background-color: $secondary
+	box-shadow: 5px 5px $bg_white_shadow
