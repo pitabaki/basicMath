@@ -13,7 +13,7 @@ List of formulas:
 
 //Finding the average of an array of numbers
 function average(numbers){
-
+	'use strict';
 	//declare a variable for calculating the sum
 	var something = 0;
 

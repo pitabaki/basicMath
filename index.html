@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Finding the Average Calculator</title>
+	<meta charset="utf-8">
+	<title>Finding the Average Calculator</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+  	<div class="navbar-header">
+      <a class="navbar-brand" href="index.html">basicMath <span class="subtitle">A JS Mathematics Library</span></a>
+    </div>
+  </div>
+</nav>
+<div class="container content">
+
+<!-- Calculator -->
+	<section>
+		<div class="row">
+			<form id="calculator">
+				<fieldset>
+					<div class="math">
+						<div class="digitInput">
+							<label>+</label>
+							<input type="text" name="number" placeholder="Ex: 13">
+						</div>
+					</div>
+					<div class="submit">
+						<input type="submit" value="Submit" id="calculatorSubmit">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+<!-- End Calculator -->
+
+</div>
 <script src="js/formula.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+//Color Palette
+$primary: #ef78b7
+$primary_shade: #d34a8c
+$secondary: #642f8c
+$secondary_tint: #7d4b9d
+$tertiary: #3d68ad
+$tertiary_shade: #25488c
+$rich_grey: #383232 
+$bg_white: #f2ebeb
+$bg_white_shade: #d3bebe
+
+//Typography
+
+//family
+$main_typeface: 'Source Sans Pro', sans-serif
+
+//sizes
+$h1_size: 48px
+$h2_size: 34px
+$h3_size: 20px
+$paragraph: 16px
+
+//leading
+$h1_leading: 66px
+$h2_leading: 44px
+$h3_leading: 33px
+$h3_leadingPlus: 44px
+$paragraph_leading: 23px
+
+//weights
+$semi-bold: 600
+$book_regular: 400
+$light: 300
+
+//Dimensions
+$default_margin: 0 auto
+$default_padding: 0
+
+//form
+$borderRadius: 6px
+
+body
+	background-color: $bg_white
+
+input
+	margin: 0 auto
+	margin: 0.5em 5px
+	padding: 0
+	padding: 0.5em 
+	border-radius: $borderRadius
+	border: none
+	background-color: $bg_white
+
+input:focus,
+textarea:focus
+	border: none
+	box-shadow: 0
+	outline: none
+
+fieldset
+	margin: 0.5em 30px
+	padding: 2% 0
+	width: 37%
+	background-color: $bg_white_shade
+	border-radius: $borderRadius
+
+.digitInput
+	margin: 0em 30px
+
+.submit
+	margin: 0em 40px
+
+.navbar-fixed-top
+	background-color: $rich_grey
+	background-image: none
+
+.navbar-default .navbar-brand
+	text-decoration: none
+	text-shadow: none
+	color: $primary
+	font-family: $main_typeface
+	font-size: $h3_size
+	font-weight: $book_regular
+	line-height: 1em
+	transition: color 0.5s ease
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:focus
+	text-decoration: none
+	color: $secondary
+	border: none
+
+.content
+	margin: 0 auto
+	padding: 0
+	padding-top: 10%
+
+.subtitle
+	padding-left: 4px
+	font-size: $paragraph
+	color: $primary_shade
+	font-weight: $light

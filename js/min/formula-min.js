@@ -1,0 +1,1 @@
+function average(e){"use strict";for(var r=0,n=0;n<e.length;n++)r+=e[n];return r/=e.length}console.log(average([39,42]));
