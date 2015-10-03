@@ -15,12 +15,13 @@ body {
 
 input {
   margin: 0 auto;
-  margin: 0.25em 5px;
   padding: 0;
-  padding: 0.5em;
-  border-radius: 6px;
+  padding: 0 0.5em;
+  height: 30px;
+  border-radius: 8px;
   border: none;
-  background-color: #f2ebeb; }
+  background-color: #f2ebeb;
+  box-shadow: 2px 2px #9b7373; }
 
 input:focus,
 textarea:focus {
@@ -28,18 +29,36 @@ textarea:focus {
   box-shadow: 0;
   outline: none; }
 
+label {
+  margin-right: 4px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f2ebeb;
+  border-radius: 105px;
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px #9b7373; }
+
+label:hover,
+label:active,
+label:focus {
+  color: #ef78b7;
+  background-color: #642f8c;
+  box-shadow: 5px 5px #9b7373; }
+
 fieldset {
   margin: 0.5em 0;
   padding: 2% 0;
   width: 80%;
   background-color: #d3bebe;
-  border-radius: 6px; }
+  border-radius: 8px; }
 
 .digitInput {
-  margin: 0em 30px; }
+  margin: 0.5em 20px; }
 
 .submit {
-  margin: 0em 40px; }
+  margin: 0em 50px; }
 
 .navbar-fixed-top {
   background-color: #383232;
@@ -82,13 +101,15 @@ form {
   padding-top: 20px; }
 
 .submit input {
-  margin: 0.5em 5px;
-  padding: 0.5em;
+  margin: 0 5px 0.5em 5px;
+  padding: 20px;
+  line-height: 0;
   color: #f2ebeb;
   background-color: #7d4b9d;
   transition: all 0.5s ease;
   box-shadow: 2px 2px #9b7373; }
 
 .submit input:hover {
+  color: #ef78b7;
   background-color: #642f8c;
   box-shadow: 5px 5px #9b7373; }

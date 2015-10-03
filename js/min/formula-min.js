@@ -1,1 +1,1 @@
-function average(e){"use strict";for(var r=0,n=0;n<e.length;n++)r+=e[n];return r/=e.length}console.log(average([39,42]));
+function average(){"use strict";var e=document.getElementById("num_01").value,n=document.getElementById("num_02").value;e=Number(e),n=Number(n);var o=[e,n];console.log("length of numbers "+e),console.log("length of numbers "+n);for(var t=0,l=0;l<o.length;l++)t+=o[l];return console.log(t),console.log(t/=o.length),!1}function init(){"use strict";var e=document.getElementById("calcForm");e.onsubmit=average}window.onload=init;

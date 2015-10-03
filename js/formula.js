@@ -11,9 +11,15 @@ List of formulas:
 1. Finding the average in an array of numbers
 */
 
-//Finding the average of an array of numbers
-function average(numbers){
+function average(){
 	'use strict';
+	var numberOne = document.getElementById("num_01").value;
+	var numberTwo = document.getElementById("num_02").value;
+	numberOne = Number(numberOne);
+	numberTwo = Number(numberTwo);
+	var numbers = [numberOne,numberTwo];
+	console.log("length of numbers " + numberOne);
+	console.log("length of numbers " + numberTwo);
 	//declare a variable for calculating the sum
 	var something = 0;
 
@@ -22,10 +28,20 @@ function average(numbers){
 		//for each passing of the for loop, add the current value to the total of "something"
 		something += numbers[i];
 	}
-
+	console.log(something);
+	console.log(something /= numbers.length);
 	//Divide total of something by the length of numbers
-	return something /= numbers.length;
+	return false;
 }
 
 //testing Average
-console.log(average([39,42]));
+//console.log(average([39,42]));
+
+function init(){
+	'use strict';
+	var form = document.getElementById("calcForm");
+	form.onsubmit = average;
+
+}
+
+window.onload = init;

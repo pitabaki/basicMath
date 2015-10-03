@@ -36,20 +36,20 @@
 					<li>Click Submit.</li>
 				</ol>
 				<p>The process is simple, but the calculations work.</p>
-				<form>
+				<form action="" method="post" id="calcForm">
 					<fieldset>
 						<div class="math">
 							<div class="digitInput">
-								<label>+</label>
-								<input type="text" name="number" placeholder="Ex: 13">
+								<label for="numberOne">+</label>
+								<input type="text" name="numberONE" id="num_01" value="0" placeholder="Please enter a number" required>
 							</div>
 							<div class="digitInput">
-								<label>+</label>
-								<input type="text" name="number" placeholder="Ex: 13">
+								<label for="numberTwo">+</label>
+								<input type="text" name="numberTWO" id="num_02" value="0" placeholder="Please enter a number" required>
 							</div>
 						</div>
 						<div class="submit">
-							<input type="submit" value="Submit" id="calculatorSubmit">
+							<input type="submit" value="calculate" id="calculatorSubmit">
 						</div>
 					</fieldset>
 				</form>

@@ -38,7 +38,8 @@ $default_margin: 0 auto
 $default_padding: 0
 
 //form
-$borderRadius: 6px
+$borderRadius: 8px
+$circleRadius: 105px
 $transition: 0.5s
 
 h1,
@@ -58,18 +59,37 @@ body
 
 input
 	margin: 0 auto
-	margin: 0.25em 5px
 	padding: 0
-	padding: 0.5em 
+	padding: 0 0.5em 
+	height: 30px
 	border-radius: $borderRadius
 	border: none
 	background-color: $bg_white
+	box-shadow: 2px 2px $bg_white_shadow
 
 input:focus,
 textarea:focus
 	border: none
 	box-shadow: 0
 	outline: none
+
+label
+	margin-right: 4px
+	width: 30px
+	height: 30px
+	line-height: 30px
+	text-align: center
+	background-color: $bg_white
+	border-radius: $circleRadius
+	transition: all $transition ease
+	box-shadow: 2px 2px $bg_white_shadow
+
+label:hover,
+label:active,
+label:focus
+	color: $primary
+	background-color: $secondary
+	box-shadow: 5px 5px $bg_white_shadow
 
 fieldset
 	margin: 0.5em 0
@@ -79,10 +99,10 @@ fieldset
 	border-radius: $borderRadius
 
 .digitInput
-	margin: 0em 30px
+	margin: 0.5em 20px
 
 .submit
-	margin: 0em 40px
+	margin: 0em 50px
 
 .navbar-fixed-top
 	background-color: $rich_grey
@@ -125,13 +145,15 @@ form
 	padding-top: 20px
 
 .submit input
-	margin: 0.5em 5px
-	padding: 0.5em
+	margin: 0 5px 0.5em 5px
+	padding: 20px
+	line-height: 0
 	color: $bg_white
 	background-color: $secondary_tint
 	transition: all $transition ease
 	box-shadow: 2px 2px $bg_white_shadow
 
 .submit input:hover
+	color: $primary
 	background-color: $secondary
 	box-shadow: 5px 5px $bg_white_shadow
