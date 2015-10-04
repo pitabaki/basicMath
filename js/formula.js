@@ -14,17 +14,50 @@ List of formulas:
 function average(){
 	'use strict';
 	var numberArray = document.getElementById("num_array").value;
+	var numberString = [];
 	var numbers = [];
-	console.log(numberArray);
+	/*var numLength = document.getElementById("num_length").value;
+	numLength = Number(numLength);
+	//console.log(numberArray.length);*/
+	//console.log(typeof numberArray[7]);
+	/*for(var h = 0; h < numberArray.length; h++){
+		if((numberArray[h] !== ",") && (numberArray[h] !== " ")){
+			numLength++;
+		}else if((numberArray[h] === ",") || (numberArray[h] === " ")){
+			numLength = 0;
+		}
+	}
+	console.log(numLength);*/
+	for(var g = 0; g < numberArray.length; g++){
+		if((numberArray[g] !== ",") && (numberArray[g] !== " ")){
+			numberString.push(numberArray[g]);
+		}else if(numberArray[g] === " "){
+			numberString.push();
+		}else{
+			numberString.push(",");
+		}
+	}
+	//numberArray = Number(numberArray);
+	console.log(numberString);
 	//declare a variable for calculating the sum
-	var something = 0;
+	var something = "";
 
 	//for loop to cycle through the "numbers" array
-	for(var i = 0; i < numbers.length; i++){
+	for(var i = 0; i < numberString.length; i++){
 		//for each passing of the for loop, add the current value to the total of "something"
-		something += numbers[i];
+		something += numberString[i];
 	}
-	console.log(something);
+	console.log("something: " + something);
+	//parse out strings as integers
+	//cycle through the numbers array
+	for(var h = 0; h < something.length; h++){
+		if(something[h] !== ","){
+			numbers.push(something[h]);
+		}else if(something[h] === ","){
+			numbers = Number(numbers);
+		}
+	}
+	console.log("this is " + numbers);
 	console.log(something /= numbers.length);
 	//Divide total of something by the length of numbers
 	return false;
