@@ -38,17 +38,16 @@
 				<p>The process is simple, but the calculations work.</p>
 				<form action="" method="post" id="calcForm">
 					<fieldset>
-						<div class="math">
-							<div class="digitInput">
-								<label for="numberOne">+</label>
-								<input type="text" name="numberONE" id="num_01" value="0" placeholder="Please enter a number" required>
-							</div>
-							<div class="digitInput">
-								<label for="numberTwo">+</label>
-								<input type="text" name="numberTWO" id="num_02" value="0" placeholder="Please enter a number" required>
-							</div>
+						<div class="formPad">
+							<select name="basicMath">
+								<option value="average">Average</option>
+							</select>
 						</div>
-						<div class="submit">
+						<div class="digitInput">
+								<!--<label for="numberOne">+</label>-->
+								<input type="text" name="num_array" id="num_array" placeholder="Ex: 23,24,74" required>
+						</div>
+						<div class="formPad">
 							<input type="submit" value="calculate" id="calculatorSubmit">
 						</div>
 					</fieldset>

@@ -14,7 +14,7 @@ body {
   background-color: #f2ebeb; }
 
 input {
-  margin: 0 auto;
+  margin: 0 5px;
   padding: 0;
   padding: 0 0.5em;
   height: 30px;
@@ -24,12 +24,14 @@ input {
   box-shadow: 2px 2px #9b7373; }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   border: none;
   box-shadow: 0;
   outline: none; }
 
-label {
+label,
+select {
   margin-right: 4px;
   width: 30px;
   height: 30px;
@@ -54,11 +56,18 @@ fieldset {
   background-color: #d3bebe;
   border-radius: 8px; }
 
-.digitInput {
-  margin: 0.5em 20px; }
+.formPad select {
+  margin: 0 5px;
+  width: 80%;
+  border: 0; }
 
-.submit {
-  margin: 0em 50px; }
+.digitInput {
+  margin: 0.5em auto;
+  width: 80%; }
+
+.formPad {
+  margin: 0.5em auto;
+  width: 80%; }
 
 .navbar-fixed-top {
   background-color: #383232;
@@ -80,7 +89,8 @@ fieldset {
 .navbar-default .navbar-brand:focus {
   text-decoration: none;
   color: #642f8c;
-  border: none; }
+  border: none;
+  outline: none; }
 
 .content {
   margin: 0 auto;
@@ -100,7 +110,7 @@ fieldset {
 form {
   padding-top: 20px; }
 
-.submit input {
+.formPad input {
   margin: 0 5px 0.5em 5px;
   padding: 20px;
   line-height: 0;
@@ -109,7 +119,7 @@ form {
   transition: all 0.5s ease;
   box-shadow: 2px 2px #9b7373; }
 
-.submit input:hover {
+.formPad input:hover {
   color: #ef78b7;
   background-color: #642f8c;
   box-shadow: 5px 5px #9b7373; }

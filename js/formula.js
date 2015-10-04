@@ -13,13 +13,9 @@ List of formulas:
 
 function average(){
 	'use strict';
-	var numberOne = document.getElementById("num_01").value;
-	var numberTwo = document.getElementById("num_02").value;
-	numberOne = Number(numberOne);
-	numberTwo = Number(numberTwo);
-	var numbers = [numberOne,numberTwo];
-	console.log("length of numbers " + numberOne);
-	console.log("length of numbers " + numberTwo);
+	var numberArray = document.getElementById("num_array").value;
+	var numbers = [];
+	console.log(numberArray);
 	//declare a variable for calculating the sum
 	var something = 0;
 
